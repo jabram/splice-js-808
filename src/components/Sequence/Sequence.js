@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import styles from "./Sequence.module.css";
+import NodeButton from "../NodeButton/NodeButton";
 
 const Sequence = () => {
   return (
@@ -14,31 +15,31 @@ const Sequence = () => {
       </div>
       <div className={styles.column}>
         <p>1</p>
-        <p>x</p>
-        <p>x</p>
-        <p>x</p>
-        <p>x</p>
+        <NodeButton />
+        <NodeButton />
+        <NodeButton />
+        <NodeButton />
       </div>
       <div className={styles.column}>
         <p>2</p>
-        <p>x</p>
-        <p>x</p>
-        <p>x</p>
-        <p>x</p>
+        <NodeButton />
+        <NodeButton />
+        <NodeButton />
+        <NodeButton />
       </div>
       <div className={styles.column}>
         <p>3</p>
-        <p>x</p>
-        <p>x</p>
-        <p>x</p>
-        <p>x</p>
+        <NodeButton />
+        <NodeButton />
+        <NodeButton />
+        <NodeButton />
       </div>
       <div className={styles.column}>
         <p>4</p>
-        <p>x</p>
-        <p>x</p>
-        <p>x</p>
-        <p>x</p>
+        <NodeButton />
+        <NodeButton />
+        <NodeButton />
+        <NodeButton />
       </div>
     </div>
   );

@@ -1,10 +1,10 @@
 .sequenceContainer {
   display: grid;
   grid-auto-flow: column;
-  grid-template-rows: repeat(5, 1fr); /* each row should be the same height */
+  grid-template-rows: auto repeat(4, 1fr); /* the first row is auto height, remaining 4 rows should be the same height */
   grid-template-columns: auto repeat(4, minmax(4rem, 1fr)); /* auto width of label, others evenly spaced */
-  align-items: center;
   text-align: center;
+  align-items: center;
 }
 
 .column {
@@ -26,7 +26,7 @@ p {
   padding-right: 1rem;
 }
 
-.column p:first-child {
+.column > p:first-child {
   border-top: 1px solid black;
   border-bottom: 1px solid black;
   font-size: 1.2rem;
