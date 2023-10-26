@@ -1,0 +1,17 @@
+.textInput {
+  width: 6rem;
+  padding: 5px;
+  border: 1px solid black;
+  font-size: 1.2rem;
+  line-height: 2.2rem;
+  font-weight: bold;
+  text-align: center;
+}
+
+.label {
+  font-size: 1.2rem;
+  line-height: 2.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-left: 5px;
+}

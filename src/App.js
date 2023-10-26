@@ -1,12 +1,10 @@
 import styles from "./App.module.css";
+import Header from "./components/Header/Header";
 
 function App() {
   return (
     <div className={styles.appContainer}>
-      <header>
-        <h1>JS-808</h1>
-        <div>controls go here</div>
-      </header>
+      <Header />
       <div>sequence content goes here</div>
     </div>
   );
