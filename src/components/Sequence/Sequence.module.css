@@ -2,7 +2,7 @@
   display: grid;
   grid-auto-flow: column;
   grid-template-rows: auto repeat(4, 1fr); /* the first row is auto height, remaining 4 rows should be the same height */
-  grid-template-columns: auto repeat(4, minmax(4rem, 1fr)); /* auto width of label, others evenly spaced */
+  grid-template-columns: 120px repeat(auto-fit, minmax(4rem, 1fr)); /* fixed 120px width of label, others evenly spaced */
   text-align: center;
   align-items: center;
 }

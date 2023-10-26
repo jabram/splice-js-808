@@ -1,0 +1,18 @@
+[
+  { "kick": true, "snare": false, "openHat": false, "closedHat": true },
+  { "kick": false, "snare": false, "openHat": false, "closedHat": false },
+  { "kick": false, "snare": false, "openHat": true, "closedHat": false },
+  { "kick": false, "snare": false, "openHat": false, "closedHat": false },
+  { "kick": true, "snare": true, "openHat": false, "closedHat": true },
+  { "kick": false, "snare": false, "openHat": false, "closedHat": false },
+  { "kick": false, "snare": false, "openHat": true, "closedHat": false },
+  { "kick": false, "snare": false, "openHat": false, "closedHat": false },
+  { "kick": true, "snare": false, "openHat": false, "closedHat": true },
+  { "kick": false, "snare": false, "openHat": false, "closedHat": false },
+  { "kick": false, "snare": false, "openHat": true, "closedHat": false },
+  { "kick": false, "snare": false, "openHat": false, "closedHat": false },
+  { "kick": true, "snare": true, "openHat": false, "closedHat": true },
+  { "kick": false, "snare": false, "openHat": false, "closedHat": false },
+  { "kick": false, "snare": false, "openHat": true, "closedHat": false },
+  { "kick": false, "snare": false, "openHat": false, "closedHat": false }
+]
