@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import styles from "./Sequence.module.css";
 import NodeButton from "../NodeButton/NodeButton";
 
-const Sequence = ({ data }) => {
+const Sequence = ({ data, toggleNode }) => {
   return (
     <div className={styles.sequenceContainer}>
       <div className={`${styles.column} ${styles.instrumentName}`}>
@@ -16,10 +16,22 @@ const Sequence = ({ data }) => {
       {data.map((step, index) => (
         <div className={styles.column} key={`step${index + 1}`}>
           <p>{index + 1}</p>
-          <NodeButton isOn={step.kick} />
-          <NodeButton isOn={step.snare} />
-          <NodeButton isOn={step.openHat} />
-          <NodeButton isOn={step.closedHat} />
+          <NodeButton
+            isOn={step.kick}
+            toggleNode={() => toggleNode(index, "kick")}
+          />
+          <NodeButton
+            isOn={step.snare}
+            toggleNode={() => toggleNode(index, "snare")}
+          />
+          <NodeButton
+            isOn={step.openHat}
+            toggleNode={() => toggleNode(index, "openHat")}
+          />
+          <NodeButton
+            isOn={step.closedHat}
+            toggleNode={() => toggleNode(index, "closedHat")}
+          />
         </div>
       ))}
     </div>
@@ -35,10 +47,12 @@ Sequence.propTypes = {
       closedHat: PropTypes.bool,
     })
   ).isRequired,
+  toggleNode: PropTypes.func.isRequired,
 };
 
 Sequence.defaultProps = {
   data: undefined,
+  toggleNode: undefined,
 };
 
 export default Sequence;
