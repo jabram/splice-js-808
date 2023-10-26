@@ -4,10 +4,10 @@ This is a soundless drum machine exercise, built for Splice per instructions at 
 
 ## Work To Do
 
-- get this repo set up with create react app, basic structure
-- build wireframe UI
-- add data for 3 preset sequences
-- play/stop functionality
+- [x] get this repo set up with create react app, basic structure
+- [x] build wireframe UI
+- [] add data for 3 preset sequences
+- [] play/stop functionality
 
 ## Future Work / if I get done early (haha)
 
