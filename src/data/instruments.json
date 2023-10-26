@@ -1,0 +1,6 @@
+[
+  { "slug": "kick", "label": "Kick" },
+  { "slug": "snare", "label": "Snare" },
+  { "slug": "openHat", "label": "Open Hat" },
+  { "slug": "closedHat", "label": "Closed Hat" }
+]

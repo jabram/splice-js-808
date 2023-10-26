@@ -2,36 +2,27 @@ import React from "react";
 import PropTypes from "prop-types";
 import styles from "./Sequence.module.css";
 import NodeButton from "../NodeButton/NodeButton";
+import instruments from "../../data/instruments.json";
 
 const Sequence = ({ data, toggleNode }) => {
   return (
     <div className={styles.sequenceContainer}>
       <div className={`${styles.column} ${styles.instrumentName}`}>
         <p>&nbsp;</p>
-        <p>Kick</p>
-        <p>Snare</p>
-        <p>Open Hat</p>
-        <p>Closed Hat</p>
+        {instruments.map((instrument) => (
+          <p key={instrument.slug}>{instrument.label}</p>
+        ))}
       </div>
       {data.map((step, index) => (
         <div className={styles.column} key={`step${index + 1}`}>
           <p>{index + 1}</p>
-          <NodeButton
-            isOn={step.kick}
-            toggleNode={() => toggleNode(index, "kick")}
-          />
-          <NodeButton
-            isOn={step.snare}
-            toggleNode={() => toggleNode(index, "snare")}
-          />
-          <NodeButton
-            isOn={step.openHat}
-            toggleNode={() => toggleNode(index, "openHat")}
-          />
-          <NodeButton
-            isOn={step.closedHat}
-            toggleNode={() => toggleNode(index, "closedHat")}
-          />
+          {instruments.map((instrument) => (
+            <NodeButton
+              key={`step${index + 1}-${instrument.slug}`}
+              isOn={step[instrument.slug]}
+              toggleNode={() => toggleNode(index, instrument.slug)}
+            />
+          ))}
         </div>
       ))}
     </div>
