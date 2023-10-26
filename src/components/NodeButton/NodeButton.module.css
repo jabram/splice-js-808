@@ -3,3 +3,11 @@
   margin: 1rem;
   border: 1px solid black;
 }
+
+.nodeButton:hover {
+  background: #efefef;
+}
+
+.dot {
+  margin-bottom: 3rem;
+}
